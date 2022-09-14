@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,53 +8,95 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+/* Top Bar */
+.topbar{
     width: 100%;
     background: #191919;
 }
-
 .social-media-div {
+margin: 0 auto;
     width: 1170px;
-    margin: 0 auto;
-    height: 44px;
+    height: 40px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-weight: 700;
 }
-
-.social-media-div div a {
+.social-media-div div a{
     text-decoration: none;
 }
 
-.social-media-div .social-icons a {
-    margin: 0 6px;
+.social-media-div .social-icons a{
+    margin: 0 5px;
 }
-
-.social-media-div .social-icons a {
-    margin: 0 0px;
+.no-mg{
+    margin:  0 0;
 }
-
-/* .signin-and-language a span {
+.social-media-div .social-icons a:nth-child(1){
+    margin-left: 0;
+}
+.social-media-div .signin-and-language a:nth-of-type(2){
+    margin-right: 0;
+}
+.social-media-div .signin-and-language a{
+    background-color: #191919;
+}
+.social-media-div .signin-and-language a span{
     font-size: 12px;
+}
+.signin-and-language a:nth-of-type(1) span{
+    padding: 2px 3px;
+    padding-right: 10px;
+    margin-right: 2px;
+    border-right: 1.5px solid white;
+}
+.signin-and-language a:nth-of-type(2) i:nth-of-type(1){
+    margin-left: 15px;
+}
+.signin-and-language a:nth-of-type(2) span{
+    margin-left: 3px;
+}
+
+
+/*  Header Sevtion */
+.header-bg{
+    background: url('/images/bg.png');
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-section{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+.header-section .logoAndMenus{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1170px;
+    height: 65px;
+}
+.header-section  .logo{
+    margin:20px 0;
+}
+.header-section .logo span{
+    font-size: 24px;
+    font-weight: 800;
+}
+.logoAndMenus .menus ul{
+    display: flex;
+    align-items: center;
+}
+.logoAndMenus .menus ul li{
+    list-style: none;
+    margin: 0 8px;
+}
+.logoAndMenus .menus ul li span{
+    font-size: 14px;
     font-weight: 700;
 }
-
-.signin-and-language a:nth-child(1) i {
-    font-size: 14px;
-    background-color: black;
-    color: white;
+.logoAndMenus .menus ul li i{
+    margin: 0 4px;
 }
-
-.signin-and-language a:nth-child(1) span {
-    margin-left: 2px;
-}
-
-.signin-and-language a:nth-child(2) i {
-    background: white;
-    color: black;
-    border-radius: 50%;
-    border: 2px solid white;
-    font-size: 13px;
-} */
